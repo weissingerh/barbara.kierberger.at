@@ -1,0 +1,14 @@
+{{#
+	@name Header banner
+	@desc Banner with text right beside
+    @set page.page_builder.header_banner
+#}}
+
+<section class="w-full md:relative md:max-h-96 relative">
+    <div style="background-image:url({{image:url}});" class="w-full md:h-96 bg-cover bg-no-repeat bg-center">
+        <div class="bg-beige text-brown md:inline-flex flex-col w-auto md:absolute md:top-1/2 md:left-2/3 p-10">
+            <h2>{{title}}</h2>
+            <span class="uppercase">{{subtitle}}</div>
+        </div>
+    </div>
+</section>

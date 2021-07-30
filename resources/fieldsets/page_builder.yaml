@@ -1,0 +1,16 @@
+title: 'Page Builder'
+fields:
+  -
+    handle: page_builder
+    field:
+      collapse: false
+      sets:
+        header_banner:
+          display: 'Header Banner'
+          fields:
+            -
+              import: header_banner
+      display: 'Page builder'
+      type: replicator
+      icon: replicator
+      listable: hidden

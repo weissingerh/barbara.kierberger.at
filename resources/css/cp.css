@@ -1,0 +1,8 @@
+/* This is all you. */
+@tailwind components;
+@tailwind base;
+@tailwind screens;
+
+h2{
+    @apply text-black;
+}

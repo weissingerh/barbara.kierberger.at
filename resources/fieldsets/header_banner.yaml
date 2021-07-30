@@ -1,0 +1,35 @@
+title: header_banner
+fields:
+  -
+    handle: image
+    field:
+      mode: grid
+      container: assets
+      restrict: false
+      allow_uploads: true
+      max_files: 1
+      display: Foto
+      type: assets
+      icon: assets
+      instructions: 'Hintergrundbild, das über die ganze Breite angezeigt wird'
+      listable: hidden
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: true
+      display: Überschrift
+      type: text
+      icon: text
+      instructions: (groß)
+      listable: hidden
+  -
+    handle: subtitle
+    field:
+      input_type: text
+      antlers: true
+      display: Unterüberschrift
+      type: text
+      icon: text
+      instructions: '(kleiner Text darunter)'
+      listable: hidden

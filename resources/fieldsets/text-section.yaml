@@ -1,0 +1,15 @@
+title: text_section
+fields:
+  -
+    handle: title
+    field: header_banner.title
+  -
+    handle: text
+    field:
+      antlers: true
+      display: Text
+      type: textarea
+      icon: textarea
+      listable: hidden
+  -
+    import: button
