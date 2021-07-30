@@ -5,9 +5,9 @@
 #}}
 
 <section class="w-full md:relative md:max-h-96 relative">
-    <div style="background-image:url({{image:url}});" class="w-full md:h-96 bg-cover bg-no-repeat bg-center">
+    <div style="background-image:url({{image:url}});" class="w-full h-32 md:h-96 bg-cover bg-no-repeat bg-center">
         <div class="bg-beige text-brown md:inline-flex flex-col w-auto md:absolute md:top-1/2 md:left-2/3 p-10">
-            <h2>{{title}}</h2>
+            {{ partial:typography/h1 :content="title" }}
             <span class="uppercase">{{subtitle}}</div>
         </div>
     </div>

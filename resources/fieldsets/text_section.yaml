@@ -1,0 +1,68 @@
+title: text_section
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: true
+      display: Überschrift
+      type: text
+      icon: text
+      instructions: (groß)
+      listable: hidden
+  -
+    handle: text
+    field:
+      antlers: true
+      display: Text
+      type: textarea
+      icon: textarea
+      listable: hidden
+  -
+    handle: bg_color
+    field:
+      options:
+        bg-ocre: Ocker
+        bg-beige: Beige
+        bg-brown: Braun
+        bg-orange: Orange
+        bg-white: Weiß
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: Hintergrundfarbe
+      type: select
+      icon: select
+      instructions: 'Hintergrundfarbe des Abschnittes'
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: button_text
+    field:
+      input_type: text
+      antlers: false
+      display: 'Button: Text'
+      type: text
+      icon: text
+      instructions: 'Text, den Button enthalten soll'
+      listable: hidden
+  -
+    handle: button_link
+    field:
+      display: 'Button: Link'
+      type: link
+      icon: link
+      instructions: 'Link, auf den der Button verweist'
+      listable: hidden
+  -
+    handle: open_in_new_tab
+    field:
+      display: 'Button: In neuem Tab öffnen'
+      type: toggle
+      icon: toggle
+      instructions: 'Wenn der Link beim Klick einen neuen Tab öffnen soll, auswählen.'
+      listable: hidden

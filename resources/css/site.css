@@ -1,1 +1,35 @@
 /* This is all you. */
+
+h2{
+    @apply text-black;
+}
+
+section.bg-ocre,
+section.bg-beige{
+    @apply text-gray;
+}
+.btn{
+    @apply hover:opacity-80;
+}
+section.bg-brown h2,
+section.bg-orange h2{
+    @apply text-beige;
+}
+section.bg-ocre .btn{
+    @apply bg-gray text-ocre;
+}
+section.bg-beige .btn{
+    @apply bg-gray text-beige;
+}
+section.bg-orange, section.bg-brown{
+    @apply text-beige; 
+}
+section.bg-orange .btn{
+    @apply bg-beige text-orange;
+} 
+section.bg-brown .btn{
+    @apply bg-beige text-brown;
+}
+section.bg-white .btn{
+    @apply bg-beige text-brown;
+}

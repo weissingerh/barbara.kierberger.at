@@ -1,0 +1,13 @@
+{{#
+	@name Text section
+	@desc Section with text and optional button
+    @set page.page_builder.text_section
+#}}
+
+<section class="{{bg_color}} w-full p-10">
+    <div class="text-center">
+        {{ partial:typography/h2 :content="title" }}
+        <p>{{text}}</p>
+        {{partial:components/button}}
+    </div>
+</section>

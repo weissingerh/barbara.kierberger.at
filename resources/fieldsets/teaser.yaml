@@ -1,0 +1,62 @@
+title: Teaser
+fields:
+  -
+    handle: title
+    field:
+      input_type: text
+      antlers: true
+      display: Überschrift
+      type: text
+      icon: text
+      listable: hidden
+  -
+    handle: teaser_element
+    field:
+      collapse: false
+      max_sets: 3
+      sets:
+        teaser_element:
+          display: teaser_element
+          fields:
+            -
+              import: teaser-element
+      display: Teaser-Element
+      type: replicator
+      icon: replicator
+      listable: hidden
+  -
+    handle: bg_color
+    field:
+      options:
+        bg-ocre: Ocker
+        bg-beige: Beige
+        bg-brown: Braun
+        bg-orange: Orange
+        bg-white: Weiß
+      multiple: false
+      clearable: false
+      searchable: true
+      taggable: false
+      push_tags: false
+      cast_booleans: false
+      display: Hintergrundfarbe
+      type: select
+      icon: select
+      instructions: 'Hintergrundfarbe des Abschnittes'
+      listable: hidden
+      validate:
+        - required
+  -
+    handle: teaser_elements
+    field:
+      collapse: false
+      sets:
+        teaser_element:
+          display: teaser_element
+          fields:
+            -
+              import: teaser-element
+      display: Teaser-ELemente
+      type: replicator
+      icon: replicator
+      listable: hidden

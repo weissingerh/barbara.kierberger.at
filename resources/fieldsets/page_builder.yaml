@@ -10,6 +10,16 @@ fields:
           fields:
             -
               import: header_banner
+        text_section:
+          display: 'Textbereich'
+          fields:
+            -
+              import: text_section
+        teaser:
+          display: 'Teaser'
+          fields:
+            -
+              import: teaser
       display: 'Page builder'
       type: replicator
       icon: replicator

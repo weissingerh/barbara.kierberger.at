@@ -29,7 +29,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "/* This is all you. */\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "/* This is all you. */\n\nh2{\n    @apply text-black;\n}\n\nsection.bg-ocre,\nsection.bg-beige{\n    @apply text-gray;\n}\n.btn{\n    @apply hover:opacity-80;\n}\nsection.bg-brown h2,\nsection.bg-orange h2{\n    @apply text-beige;\n}\nsection.bg-ocre .btn{\n    @apply bg-gray text-ocre;\n}\nsection.bg-beige .btn{\n    @apply bg-gray text-beige;\n}\nsection.bg-orange, section.bg-brown{\n    @apply text-beige; \n}\nsection.bg-orange .btn{\n    @apply bg-beige text-orange;\n} \nsection.bg-brown .btn{\n    @apply bg-beige text-brown;\n}\nsection.bg-white .btn{\n    @apply bg-beige text-brown;\n}", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

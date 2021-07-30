@@ -1,0 +1,15 @@
+{{#
+	@name Teaser
+	@desc Teaser with up to three teaser elements
+    @set page.page_builder.teaser
+#}}
+
+<div>
+    {{ partial:typography/h2 :content="title" }}
+    {{teaser_elements}}
+    test
+        {{partial:components/image :image="image"}}
+        {{teaser_elements:text}}
+        {{partial:components/button}}
+    {{/teaser_elements}}
+</div>

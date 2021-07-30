@@ -1,19 +1,25 @@
 title: Button
 fields:
   -
-    handle: button_label
-    field: text-section.button_label
-    config:
-      if:
-        show_button: '=== true'
+    handle: button_text
+    field:
+      input_type: text
+      antlers: false
+      display: 'Button: Text'
+      type: text
+      icon: text
+      instructions: 'Text, den Button enthalten soll'
+      listable: hidden
+      width: 100
   -
     handle: button_link
-    field: text-section.button_link
-    config:
-      validate:
-        - url
-      if:
-        show_button: 'equals true'
+    field:
+      display: 'Button: Link'
+      type: link
+      icon: link
+      instructions: 'Link, auf den der Button verweist'
+      listable: hidden
+      width: 100
   -
     handle: open_in_new_tab
     field:
@@ -22,3 +28,4 @@ fields:
       icon: toggle
       instructions: 'Wenn der Link beim Klick einen neuen Tab öffnen soll, auswählen'
       listable: hidden
+      width: 100

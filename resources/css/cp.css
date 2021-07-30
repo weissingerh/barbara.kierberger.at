@@ -6,3 +6,16 @@
 h2{
     @apply text-black;
 }
+
+.bg_ocre{
+    @apply bg-ocre text-gray;
+}
+.bg_orange{
+    @apply bg-orange text-beige; 
+}
+.bg_beige{
+    @apply bg-beige text-gray;
+}
+.bg_brown{
+    @apply bg-brown text-beige;
+}
