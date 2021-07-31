@@ -4,12 +4,15 @@
     @set page.page_builder.teaser
 #}}
 
-<div>
+<section class="p-10 {{bg_color}} mx-auto text-center">
     {{ partial:typography/h2 :content="title" }}
-    {{teaser_elements}}
-    test
-        {{partial:components/image :image="image"}}
-        {{teaser_elements:text}}
-        {{partial:components/button}}
-    {{/teaser_elements}}
-</div>
+    <div class="md:flex md:justify-around">
+        {{teaser_items}}
+            <div class="flex flex-col space-y-4">
+                {{partial:components/image :image="image" class="mx-auto w-32 h-32 object-cover shadow-md"}}
+                <p>{{text}}</p>
+                {{partial:components/button class="mx-auto"}}
+            </div>
+        {{/teaser_items}}
+    </div>
+</section>

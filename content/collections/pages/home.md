@@ -5,7 +5,7 @@ title: Home
 template: home
 author: 0eada585-f17a-414d-a430-464f58532915
 updated_by: 0eada585-f17a-414d-a430-464f58532915
-updated_at: 1627687212
+updated_at: 1627730466
 page_builder:
   -
     type: header_banner
@@ -50,5 +50,24 @@ page_builder:
             open_in_new_tab: true
         type: teaser_element
         enabled: true
+    teaser_items:
+      -
+        image: images.jpeg
+        text: 'Strömen ist schön und deswegen klicke'
+        button_text: 'Text Button'
+        button_link: /tetst-link
+        open_in_new_tab: false
+      -
+        image: photo-1534171472159-edb6d1e0b63c.jpeg
+        text: 'Qi Gong ist auch eine gute möglichkeit'
+        button_text: 'Mehr zu Qi Gong'
+        button_link: 'entry::home'
+        open_in_new_tab: false
+      -
+        image: photo-1534171472159-edb6d1e0b63c.jpeg
+        text: 'Qi Gong ist auch eine gute möglichkeit'
+        button_text: 'Mehr zu Qi Gong'
+        button_link: 'entry::home'
+        open_in_new_tab: false
 ---
 asdfhlöasfhioasf

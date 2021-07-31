@@ -10,21 +10,6 @@ fields:
       icon: text
       listable: hidden
   -
-    handle: teaser_element
-    field:
-      collapse: false
-      max_sets: 3
-      sets:
-        teaser_element:
-          display: teaser_element
-          fields:
-            -
-              import: teaser-element
-      display: Teaser-Element
-      type: replicator
-      icon: replicator
-      listable: hidden
-  -
     handle: bg_color
     field:
       options:
@@ -47,16 +32,61 @@ fields:
       validate:
         - required
   -
-    handle: teaser_elements
+    handle: teaser_items
     field:
-      collapse: false
-      sets:
-        teaser_element:
-          display: teaser_element
-          fields:
-            -
-              import: teaser-element
-      display: Teaser-ELemente
-      type: replicator
-      icon: replicator
+      fields:
+        -
+          handle: image
+          field:
+            mode: grid
+            container: assets
+            restrict: false
+            allow_uploads: true
+            max_files: 1
+            display: Bild
+            type: assets
+            icon: assets
+            listable: hidden
+        -
+          handle: text
+          field:
+            antlers: true
+            display: Text
+            type: textarea
+            icon: textarea
+            listable: hidden
+        -
+          handle: button_text
+          field:
+            input_type: text
+            antlers: false
+            display: 'Button: Text'
+            type: text
+            icon: text
+            instructions: 'Text, den Button enthalten soll'
+            listable: hidden
+        -
+          handle: button_link
+          field:
+            display: 'Button: Link'
+            type: link
+            icon: link
+            instructions: 'Link, auf den der Button verweist'
+            listable: hidden
+        -
+          handle: open_in_new_tab
+          field:
+            display: 'Button: In neuem Tab öffnen'
+            type: toggle
+            icon: toggle
+            instructions: 'Wenn der Link beim Klick einen neuen Tab öffnen soll, auswählen.'
+            listable: hidden
+            mode: stacked
+            max_rows: 3
+            min_rows: 1
+      reorderable: true
+      display: 'Teaser Elemente'
+      type: grid
+      icon: grid
       listable: hidden
+      mode: stacked
